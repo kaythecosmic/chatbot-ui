@@ -1,12 +1,46 @@
 {% extends 'base.html' %} {% block body %}
-<div class="p-6 w-[800px] mx-auto">
-  <h1 class="text-3xl tracking-tight font-medium my-4" id="chat-header">
+<div class="p-6 w-[800px] mx-auto border border-gray-200 rounded-md">
+  <h1
+    class="text-3xl tracking-tight font-medium w-full text-center mb-4"
+    id="chat-header "
+  >
     CCET Help Desk
   </h1>
   <div
     id="chat-log"
-    class="rounded-md w-full h-[40rem] relative p-6 overflow-y-auto bg-gray-50 border border-gray-200"
-  ></div>
+    class="rounded-md w-full h-[40rem] relative p-6 overflow-y-auto bg-gray-50 flex flex-col justify-end gap-4"
+  >
+    <div>
+      <div class="size-8 border border-black rounded-full">
+        <!-- <img src="" alt=""> -->
+      </div>
+      <div class="mt-2 border rounded-lg w-[70%] px-4 py-2">
+        <p class="text-[0.9rem] font-normal text-justify">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          minus quas soluta cupiditate, mollitia consectetur quam sed deleniti
+          consequatur sit reiciendis. Molestiae est quaerat cum illum modi qui
+          corporis similique?
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-end justify-center">
+      <div class="size-8 border border-black rounded-full">
+        <!-- <img src="" alt=""> -->
+      </div>
+      <div class="mt-2 border rounded-lg p-2 w-[70%] px-4 py-2">
+        <p class="text-[0.9rem] font-normal text-justify">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          minus quas soluta cupiditate, mollitia consectetur quam sed deleniti
+          consequatur sit reiciendis. Molestiae est quaerat cum illum modi qui
+          corporis similique? Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Eaque, tenetur vero repellat sint omnis nostrum illo
+          delectus nesciunt animi aspernatur voluptatibus, fuga ipsam atque,
+          possimus iusto voluptatum natus ad nam.
+        </p>
+      </div>
+    </div>
+  </div>
   <div class="mt-4 w-full flex flex-row">
     <input
       id="chat-message-input"
@@ -16,7 +50,7 @@
     />
     <button
       id="chat-message-submit"
-      class="py-2 px-4 w-2/12 ml-2 border-transparent text-sm font-medium rounded-md border-blue-600 border-2 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+      class="py-2 px-4 w-2/12 ml-2 text-sm font-medium rounded-md border-blue-600 border text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
       type="submit"
     >
       Ask
