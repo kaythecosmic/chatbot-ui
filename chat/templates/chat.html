@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block body %}
+<div class="p-6 w-[800px] mx-auto">
+  <h1 class="text-3xl tracking-tight font-medium my-4" id="chat-header">
+    CCET Help Desk
+  </h1>
+  <div
+    id="chat-log"
+    class="rounded-md w-full h-[40rem] relative p-6 overflow-y-auto bg-gray-50 border border-gray-200"
+  ></div>
+  <div class="mt-4 w-full flex flex-row">
+    <input
+      id="chat-message-input"
+      class="py-2 w-10/12 rounded-md outline-none bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:border-blue-600"
+      type="text"
+      placeholder="Ask your queries here."
+    />
+    <button
+      id="chat-message-submit"
+      class="py-2 px-4 w-2/12 ml-2 border-transparent text-sm font-medium rounded-md border-blue-600 border-2 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+      type="submit"
+    >
+      Ask
+    </button>
+  </div>
+</div>
+
+{% endblock %}
