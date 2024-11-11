@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "theme",
     "django_browser_reload",
     "chat",
-    "home"
+    "home",
+    "django_icons"
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+DJANGO_ICONS = {
+    "ICONS": {
+        "edit": {"name": "fa-solid fa-pencil"},
+    },
+}
